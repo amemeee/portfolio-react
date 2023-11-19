@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import CustomNavbar from './navbar'; // Import your Navbar component
+import Intro from './intro'; // Import your Navbar component
+import Project from './project'; // Import your Navbar component
+import Skill from './skills'; // Import your Navbar component
+import Footer from './footer'; // Import your Navbar component
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Include the Navbar component */}
+      <CustomNavbar />
+      <Intro />
+      <Project />
+      <Skill />
+      <Footer />
+      {/* Rest of your content */}
+      
     </div>
   );
-}
+};
 
 export default App;
