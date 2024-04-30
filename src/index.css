@@ -16,10 +16,43 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  max-width: 100vh;
+  max-width: 100%;
   min-height: 100vh;
   background-color: #edf2f8;
+  position: relative;
+}
+
+.Intro img {
+  width: auto;
+  max-height: 90vh;
+
+}
+
+.me-card {
+  background-color: pink;
+  width: auto;
+  max-height: 100vh;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%; /* Position content 50% from the top */
+  left: 50%; /* Position content 50% from the left */
+  transform: translate(-50%, -50%); /* Center content */
+  text-align: center; /* Center text horizontally */
+}
+
+.overlay-content h1 {
+  color: black; /* Example: white text */
+  font-weight: bold;
+}
+
+.overlay-content button {
+  background-color: #4CAF50; /* Example: green button */
+  color: white; /* Example: white text */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .myName{
