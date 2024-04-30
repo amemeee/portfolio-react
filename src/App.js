@@ -12,8 +12,7 @@ const App = () => {
       {/* Include the Navbar component */}
       <CustomNavbar />
       <Intro />
-      <Project />
-      <Skill />
+      
       <Footer />
       {/* Rest of your content */}
       
