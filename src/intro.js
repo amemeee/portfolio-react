@@ -4,8 +4,8 @@ import seishin from './images/seishin.gif'; // Import the image
 import darkaria from './music/darkaria.mp3'; // Import the image
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBackward, faPlay, faPause, faForward, faHeart,faEllipsisV, faVolumeUp, faVolumeMute} from '@fortawesome/free-solid-svg-icons';
-
+import { faEnvelope, faBackward, faPlay, faPause, faForward, faHeart,faEllipsisV, faVolumeUp, faVolumeMute} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faFacebook} from '@fortawesome/free-brands-svg-icons';
 
 const Intro = () => {
   useEffect(() => {
@@ -104,7 +104,21 @@ const Intro = () => {
           {songAnnouncement && (
         <marquee>{<strong>{songAnnouncement}</strong>} - {timeRemaining}</marquee>
       )}
+     <footer>
+      <div className="footer-icons">
+        <a href="https://github.com/yourusername">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="mailto:youremail@example.com">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <a href="https://facebook.com/yourusername">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
       </div>
+    </footer>
+      </div>
+      
     </div>
   );
 };
