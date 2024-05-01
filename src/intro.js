@@ -83,41 +83,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="profile-div">
-      <div className="profile-card">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <img src={seishin} alt="Big Image" className="img-fluid rounded" />
-          <div className="likes-container">
-            <h6> <FontAwesomeIcon icon={faHeart} className="heart-icon" /> 0 Likes</h6>
-              <div className="icon-wrapper">
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.01"
-              value={volume}
-              onChange={handleVolumeChange}
-            />
-            <FontAwesomeIcon icon={isMuted ? faVolumeMute : faVolumeUp} onClick={handleVolumeToggle} />
-            <FontAwesomeIcon icon={faEllipsisV} />
-          </div>
-          </div>
-        </div>
-          <div className="likes-container">
-            <span className="username">@4memeee <span className="comment">Lets the journey begin!</span></span>
-          </div>
-          <div className="icon-container">
-            <FontAwesomeIcon icon={faBackward} /> <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} onClick={handlePlayPause} /><FontAwesomeIcon icon={faForward} /> 
-            <audio ref={audioRef} src={darkaria} onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)} /> {/* Use darkaria as the source */}
- 
-          </div>
-          {songAnnouncement && (
-        <marquee>{<strong>{songAnnouncement}</strong>} - {timeRemaining}</marquee>
-      )}
-     
-      </div>
-      
-    </div>
+    <div></div>
   );
 };
 
