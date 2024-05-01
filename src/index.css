@@ -10,7 +10,7 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+} 
 
 .Intro {
   display: flex;
@@ -36,20 +36,20 @@ code {
 
 .overlay-content {
   position: absolute;
-  top: 50%; /* Position content 50% from the top */
-  left: 50%; /* Position content 50% from the left */
-  transform: translate(-50%, -50%); /* Center content */
-  text-align: center; /* Center text horizontally */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
 }
 
 .overlay-content h1 {
-  color: black; /* Example: white text */
+  color: black; 
   font-weight: bold;
 }
 
 .overlay-content button {
-  background-color: #4CAF50; /* Example: green button */
-  color: white; /* Example: white text */
+  background-color: #4CAF50; 
+  color: white; 
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -58,3 +58,110 @@ code {
 .myName{
   color:red;
 }
+*/
+.profile-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #edf2f8;
+  position: relative;
+}
+
+.profile-card {
+  width: 80%;
+  height: 90vh;
+  background-color: #ebe6e6;
+  box-shadow: 10px 10px 5px rgb(129, 126, 126);
+  color:black;
+}
+
+.profile-card img{
+  background-color: #1acc64;
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.profile-card div{
+ 
+ 
+}
+
+
+
+.likes {
+  padding-left: 100px;
+  text-align: left;
+  font-size:100px;
+}
+
+.music{
+  width:50%;
+  text-align:center;
+  background-color: red;
+}
+
+.music div{
+  text-align:center;
+}
+
+.icon-container {
+  padding: 20px;
+  display: flex; /* Ensure icons are displayed in a row */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  font-size: 32px; /* Adjust the size of the container */
+}
+
+.icon-container > * {
+  margin-right: 40px; /* Adjust the spacing between icons */
+}
+
+.icon-container > *:last-child {
+  margin-right: 0; /* Remove right margin for the last icon */
+}
+
+.username {
+  text-align: left;
+}
+
+.likes-container {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Spread items apart */
+  align-items: center; /* Center items vertically */
+  margin: 20px 0px 20px 0px; /* Add margin to separate from other elements */
+  padding: 0 150px; /* Add padding to create space from the edges */
+}
+
+.likes-container h6 {
+  margin: 0; /* Remove default margin */
+}
+
+.username {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Spread items apart */
+  align-items: center; /* Center items vertically */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.comment {
+  padding-left: 30px;
+  color: gray;
+  font-size: 20px;
+  font-weight: none;
+}
+
+.icon-wrapper > * {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+
