@@ -6,6 +6,15 @@ import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faBackward, faPlay, faPause, faForward, faHeart,faEllipsisV, faVolumeUp, faVolumeMute} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook} from '@fortawesome/free-brands-svg-icons';
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
 
 const Intro = () => {
   useEffect(() => {
@@ -76,11 +85,11 @@ const Intro = () => {
   return (
     <div className="profile-div">
       <div className="profile-card">
-      
-        <img src={seishin} alt="Big Image" className="img-fluid rounded" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <img src={seishin} alt="Big Image" className="img-fluid rounded" />
           <div className="likes-container">
-          <h6> <FontAwesomeIcon icon={faHeart} className="heart-icon" /> 0 Likes</h6>
-            <div className="icon-wrapper">
+            <h6> <FontAwesomeIcon icon={faHeart} className="heart-icon" /> 0 Likes</h6>
+              <div className="icon-wrapper">
             <input
               type="range"
               min="0"
@@ -93,6 +102,7 @@ const Intro = () => {
             <FontAwesomeIcon icon={faEllipsisV} />
           </div>
           </div>
+        </div>
           <div className="likes-container">
             <span className="username">@4memeee <span className="comment">Lets the journey begin!</span></span>
           </div>
@@ -104,19 +114,7 @@ const Intro = () => {
           {songAnnouncement && (
         <marquee>{<strong>{songAnnouncement}</strong>} - {timeRemaining}</marquee>
       )}
-     <footer>
-      <div className="footer-icons">
-        <a href="https://github.com/yourusername">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a href="mailto:youremail@example.com">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a href="https://facebook.com/yourusername">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-      </div>
-    </footer>
+     
       </div>
       
     </div>

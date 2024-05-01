@@ -59,6 +59,11 @@ code {
   color:red;
 }
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .profile-div {
   display: flex;
   justify-content: center;
@@ -163,5 +168,4 @@ code {
 .heart-icon:hover {
   transform: scale(1.2); /* Increase size on hover */
 }
-
 
